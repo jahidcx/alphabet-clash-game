@@ -29,6 +29,12 @@ function getTextElementById (elementId){
    const value = parseInt(elementText);
    return value; 
 }
+
+function getElementTextById (elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}
 // set update score
 function setUpdateScoreAndLifeById (elementId, value){
     const element = document.getElementById(elementId);
